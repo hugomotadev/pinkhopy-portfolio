@@ -25,13 +25,34 @@ body {
 }
 
 .container--flex {
-    display: flex;
+  display: flex;
 }
+
+.btn-contato button {
+  padding: 12.0125px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #d51482;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0px 0px 8px #d51481a8;
+  transform: scale(
+    1.05
+  ); /* Efeit zoom - é necessário setar display inline-block na tag a*/
+}
+
+/* Fim - Configuração geral | Resetando configurações */
 
 /* Estilo do cabeçalho */
 
 header {
-  padding: 40px 6.5%; /* Aplicando 40px top e button - 9% em ambas laterais */
+  padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
 }
 
 /* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class container "filha" da tag "mão" header */
@@ -51,7 +72,9 @@ header a {
 
 header a:hover {
   color: #ff3cab;
-  transform: scale(1.05); /* Efeit zoom - é necessário setar display inline-block na tag a*/
+  transform: scale(
+    1.05
+  ); /* Efeit zoom - é necessário setar display inline-block na tag a*/
   font-weight: 600;
 }
 
@@ -64,46 +87,31 @@ header nav li {
   padding: 0 2.5rem;
 }
 
-header .btn-contato button {
-  padding: 12.0125px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 20px;
-  border: none;
-  color: #fff;
-  background-color: #d51482;
-  cursor: pointer;
-}
-
-header .btn-contato button:hover {
-  box-shadow: 0px 0px 8px #d51481a8;
-}
-
 /* Main configurações */
 
 /* Section Hero */
 
 section.hero {
-    padding: 40px 6.5%;
-
+  padding: 40px 9%;
 }
 
 section.hero .container--flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    color: #3a3a3a;
+  font-size: 48px;
+  color: #3a3a3a;
 }
 
-.hero h1 strong {
-    color: #d51482;
-    
-    
+.hero .text-hero h1 strong {
+  color: #d51482;
+}
+
+.hero .text-hero p {
+  margin: 40px 0;
 }
 
 /* Imagem hero */
