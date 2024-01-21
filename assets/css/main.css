@@ -80,16 +80,38 @@ header .btn-contato button:hover {
 }
 
 /* Main configurações */
+
 /* Section Hero */
 
-section .container-padding {
+section.hero {
     padding: 40px 6.5%;
+
 }
+
+section.hero .container--flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #3a3a3a;
+}
+
+.hero h1 strong {
+    color: #d51482;
+    
+    
+}
+
 /* Imagem hero */
 
 .img--hero img {
   max-width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .img--hero--container {
