@@ -18,7 +18,7 @@ body {
   font-family: var(--font-primary);
 }
 
-.header--container {
+.container {
   max-width: 1280px;
   margin: 0 auto; /* Centralizando itens */
 }
@@ -29,9 +29,9 @@ header {
   padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
 }
 
-/* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class header--container "filha" da tag "mão" header */
+/* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class container "filha" da tag "mão" header */
 
-header > .header--container {
+header > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +41,7 @@ header a {
   text-decoration: none;
   color: #3a3a3a;
   display: inline-block;
-  transition: .2s;
+  transition: .3s;
 }
 
 header a:hover{
