@@ -1,4 +1,4 @@
-/* Resetando configurações */
+/* Configuração geral | Resetando configurações */
 
 * {
   margin: 0;
@@ -18,4 +18,23 @@ body {
     #b91d73,
     #f953c6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--container {
+  max-width: 1280px;
+  margin: 0 auto; /* Centralizando itens */
+}
+
+/* Estilo do cabeçalho */
+
+header {
+  padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
+}
+
+/* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class header--container "filha" da tag "mão" header */
+
+header > .header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
