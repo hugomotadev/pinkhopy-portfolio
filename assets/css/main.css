@@ -1,3 +1,11 @@
+/* Importação */
+/* Google fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
 /* Configuração geral | Resetando configurações */
 
 * {
@@ -7,17 +15,7 @@
 }
 
 body {
-  background: #f953c6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: var(--font-primary);
 }
 
 .header--container {
@@ -37,4 +35,41 @@ header > .header--container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: #3a3a3a;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+    color: #ff3cab;
+    transform: scale(1.05);
+    font-weight: 600;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav li {
+    display: inline-block; /* Elementos na mesma linha conservando largura e altura */
+    padding: 0 2.5rem;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #d51482;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #d51481a8;
 }
