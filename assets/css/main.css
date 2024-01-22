@@ -116,13 +116,29 @@ section.hero .container--flex {
 
 /* Imagem hero */
 
-.img--hero img {
+.hero .img--hero img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  animation: avatar-animation 20s ease-in-out alternate infinite;
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  border: #d51482 4px solid;
+  
 }
 
-.img--hero--container {
+.hero .img--hero--container {
   display: flex;
   flex-direction: column;
+  
+}
+
+/* Animação img */
+
+@keyframes avatar-animation {
+  50%{
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
+  }
+  100%{
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+  }
+  
 }
