@@ -1,0 +1,52 @@
+/* Main configurações */
+
+/* Section Hero */
+
+section.hero {
+  padding: 40px 9%;
+}
+
+section.hero .container--flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--text-color);
+}
+
+.hero .text-hero h1 strong {
+  color: #d51482;
+}
+
+.hero .text-hero p {
+  margin: 40px 0;
+}
+
+/* Imagem hero */
+
+.hero .img--hero img {
+  max-width: 100%;
+  height: auto;
+  animation: avatar-animation 20s ease-in-out alternate infinite;
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  border: #d51482 4px solid;
+}
+
+.hero .img--hero--container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animação img */
+
+@keyframes avatar-animation {
+  50% {
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
+  }
+  100% {
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+  }
+}

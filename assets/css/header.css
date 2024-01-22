@@ -1,0 +1,40 @@
+/* Estelização do cabeçalho */
+
+header {
+  padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
+}
+
+/* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class container "filha" da tag "mão" header */
+
+header > .container-padding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block; /* Transformando link em um elemento block level para adquirir propriedade "transforme"  */
+  transition: 0.3s all;
+}
+
+header a:hover {
+  color: #ff3cab;
+  transform: scale(
+    1.05
+  ); /* Efeit zoom - é necessário setar display inline-block na tag a*/
+}
+
+header a:active {
+  transform: scale(0.98);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav li {
+  display: inline-block; /* Elementos na mesma linha conservando largura e altura */
+  padding: 0 2.5rem;
+}
