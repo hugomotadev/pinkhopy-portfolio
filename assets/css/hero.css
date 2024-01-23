@@ -29,14 +29,19 @@ section.hero .container--flex {
   font-weight: 900;
 }
 
+.hero h2{
+    line-height: 1.2;
+    font-size: var(--h2-font);
+    color: var(--text-color);
+}
 .hero .text-hero p {
   margin: 40px 0;
   font-size: var(--p-font);
 }
 
 .social{
-    margin-bottom: 40px;
-    
+    margin: 40px 0;
+
 }
 
 .social i{

@@ -2,7 +2,7 @@
 
 header {
   padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
-    
+  
 }
 
 /* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class container "filha" da tag "mão" header */
@@ -40,9 +40,9 @@ header nav li {
   padding: 0 2.5rem;
 }
 
-#menu-icon{
-    font-size: 35px;
-    z-index: 10001;
-    cursor: pointer;
-    display: none; /* Ocultar icon */
+#menu-icon {
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none; /* Ocultar icon */
 }
