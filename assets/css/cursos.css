@@ -1,6 +1,5 @@
 @import url(/assets/css/global.css);
 
-
 /* Estelização da section cursos */
 
 section.cursos {
@@ -14,47 +13,40 @@ section.cursos {
   padding: 40px 4%;
 }
 
+.container--padding h2.title {
+    text-align: left;
+    padding: 17px 0;
+}
 
 .cursos .container--padding .row-wrap {
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
 }
-
-.cursos .container--padding .container--flex .cursos-box{
-    color: var(--text-color);
-    padding-bottom: 60px;
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-}
-
-
 
 /* 
-
-.cursos .container--padding .grid-container{
-    display: grid;
-    background: green;
-    gap: auto;
-    grid-template-columns: auto auto;
-
-    
-    
+.cursos .container--padding .container--flex .cursos-box {
+  color: var(--text-color);
+  padding-bottom: 60px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
 }
 
-.cursos-box{
-    text-align: center;
-    
-
-}
 */
 
-.cursos .container--padding .container--flex .cursos-box img {
-    border: solid palevioletred 4px;
-    border-radius: 10px;
-    
+ 
+.cursos .container--padding .grid-container{
+    display: grid;
+    gap: 70px;
+    grid-template-columns: auto auto;
 
 }
 
+.cursos .container--padding .container--flex .cursos-box img {
+  border: solid palevioletred 4px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 17px;
 
+}
