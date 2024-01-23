@@ -1,6 +1,57 @@
 /* Estelização da section cursos */
 
 section.cursos {
-  background-color: aqua;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.9836309523809523) 67%,
+    rgba(255, 0, 249, 0.4458158263305322) 100%
+  );
   padding: 40px 4%;
 }
+
+
+.cursos .container--padding .row-wrap {
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cursos .container--padding .container--flex .cursos-box{
+    color: var(--text-color);
+    padding-bottom: 60px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+/* 
+
+.cursos .container--padding .grid-container{
+    display: grid;
+    background: green;
+    gap: auto;
+    grid-template-columns: auto auto;
+
+    
+    
+}
+
+.cursos-box{
+    text-align: center;
+    
+
+}
+*/
+
+.cursos .container--padding .container--flex .cursos-box img {
+    border: solid palevioletred 4px;
+    border-radius: 10px;
+    
+
+}
+
+

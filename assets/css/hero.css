@@ -1,9 +1,13 @@
+@import url(/assets/css/global.css);
+
 /* Main configurações */
 
 /* Section Hero */
 
 section.hero {
   padding: 40px 9%;
+  height: 100vh;
+  width: 100%;
 }
 
 section.hero .container--flex {
@@ -13,18 +17,49 @@ section.hero .container--flex {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: var(--h1-font);
   color: var(--text-color);
+  font-weight: 900;
+  margin: 20px 0px 20px;
+  line-height: 1.2;
 }
 
 .hero .text-hero h1 strong {
   color: #d51482;
+  font-weight: 900;
 }
 
 .hero .text-hero p {
   margin: 40px 0;
+  font-size: var(--p-font);
 }
 
+.social{
+    margin-bottom: 40px;
+    
+}
+
+.social i{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: var(--color-primary);
+    border-radius: 20px;
+    box-shadow: 0 0 20px transparent;
+    transition: all .50s ease;
+}
+
+.social i:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--color-primary);
+}
+
+.social i:active {
+    transform: scale(0.98);
+  }
 /* Imagem hero */
 
 .hero .img--hero img {

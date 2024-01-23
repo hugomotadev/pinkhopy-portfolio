@@ -5,6 +5,13 @@
 :root {
   --font-primary: "Poppins", sans-serif;
   --text-color: #3a3a3a;
+  --color-primary:#d51482;
+  --color-dark: #d51481a8;
+
+  --h1-font: 4.5rem;
+  --h2-font: 2.9rem;
+  --p-font: 1re;
+
 }
 
 /* Configuração geral | Resetando configurações */
@@ -13,13 +20,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-primary);
 }
 
-.container-padding {
+.container--padding {
   max-width: 1280px;
   margin: 0 auto; /* Centralizando itens */
 }
@@ -35,16 +43,32 @@ body {
   border-radius: 20px;
   border: none;
   color: #fff;
-  background-color: #d51482;
+  background-color: var(--color-primary);
   cursor: pointer;
-  transition: 0.3s;
+  display: inline-block;
+  transition: all 0.50s ease;
 }
 
 .btn-contato button:hover {
-  box-shadow: 0px 0px 8px #d51481a8;
+  box-shadow: 0px 0px 8px var(--color-dark);
   transform: scale(
     1.05
   ); /* Efeit zoom - é necessário setar display inline-block na tag a*/
 }
+
+h2.title {
+    color: var(--text-color);
+    font-size: 38px;
+    text-align: center;
+
+}
+
+h2 span {
+    color: var(--color-primary);
+    font-size: 38px;
+    text-align: center;
+
+}
+
 
 /* Fim - Configuração geral | Resetando configurações */
