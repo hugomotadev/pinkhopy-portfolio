@@ -78,6 +78,7 @@ section.hero .container--flex {
 .hero .img--hero--container {
   display: flex;
   flex-direction: column;
+  width: 27rem;
 }
 
 /* Animação img */

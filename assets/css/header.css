@@ -4,6 +4,7 @@
 
 header {
   padding: 40px 9%; /* Aplicando 40px top e button - 9% em ambas laterais */
+  margin-bottom: 3em;
 }
 
 /* Usando seletor ">" para aplicar estilização apenas nos elementos/itens na class container "filha" da tag "mão" header */

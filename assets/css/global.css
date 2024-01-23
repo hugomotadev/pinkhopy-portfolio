@@ -1,6 +1,13 @@
+/* Código global.css */
+
+/* Importações */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/* Configuração global | Resetando configurações */
+
 /* Variáveis */
+
 :root {
   --font-primary: "Poppins", sans-serif;
   --text-color: #3a3a3a;
@@ -11,8 +18,7 @@
   --h2-font: 2.9rem;
   --p-font: 1re;
 }
-
-/* Configuração geral | Resetando configurações */
+/* Fim Variáveis */
 
 * {
   margin: 0;
@@ -27,7 +33,7 @@ body {
 
 .container--padding {
   max-width: 1280px;
-  margin: 0 auto; /* Centralizando itens */
+  margin: 0 auto; /* centralizando itens */
   overflow: hidden;
 }
 
@@ -50,21 +56,28 @@ body {
 
 .btn-contato button:hover {
   box-shadow: 0px 0px 8px var(--color-dark);
-  transform: scale(
-    1.05
-  ); /* Efeit zoom - é necessário setar display inline-block na tag a*/
+  transform: scale(1.05); /* efeito zoom/"crecimento" */
 }
 
 h2.title {
   color: var(--text-color);
   font-size: 38px;
   text-align: center;
+  margin-bottom: 15px; /* Espaçamento interno em elementos */
 }
 
 h2 span {
   color: var(--color-primary);
   font-size: 38px;
   text-align: center;
+}
+
+.cursos .container--padding .cursos-box {
+  margin-bottom: 30px; /* Espaçamento entre elementos na grade de cursos */
+}
+
+main {
+  padding: 20px 0; /* Espaçamento dentro do container principal */
 }
 
 /* Fim - Configuração geral | Resetando configurações */
