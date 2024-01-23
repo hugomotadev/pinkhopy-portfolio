@@ -1,17 +1,15 @@
-/* Google fonts - Poppins */
-@import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Variáveis */
 :root {
-  --font-primary: "Poppins", sans-serif;
+  --font-primary: 'Poppins', sans-serif;
   --text-color: #3a3a3a;
-  --color-primary:#d51482;
+  --color-primary: #d51482;
   --color-dark: #d51481a8;
 
   --h1-font: 4.5rem;
   --h2-font: 2.9rem;
   --p-font: 1re;
-
 }
 
 /* Configuração geral | Resetando configurações */
@@ -46,7 +44,7 @@ body {
   background-color: var(--color-primary);
   cursor: pointer;
   display: inline-block;
-  transition: all 0.50s ease;
+  transition: all 0.5s ease;
 }
 
 .btn-contato button:hover {
@@ -57,18 +55,15 @@ body {
 }
 
 h2.title {
-    color: var(--text-color);
-    font-size: 38px;
-    text-align: center;
-
+  color: var(--text-color);
+  font-size: 38px;
+  text-align: center;
 }
 
 h2 span {
-    color: var(--color-primary);
-    font-size: 38px;
-    text-align: center;
-
+  color: var(--color-primary);
+  font-size: 38px;
+  text-align: center;
 }
-
 
 /* Fim - Configuração geral | Resetando configurações */
