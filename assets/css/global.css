@@ -12,6 +12,7 @@
   --font-primary: "Poppins", sans-serif;
   --text-color: #3a3a3a;
   --color-primary: #d51482;
+  --color-second: #c33b80;
   --color-dark: #d51481a8;
   --cinder-light: #656d72;
   --h1-font: 4.5rem;
@@ -102,4 +103,7 @@ main {
   padding: 20px 0; /* Espaçamento dentro do container principal */
 }
 
+section {
+  padding: 40px 9%;
+}
 /* Fim - Configuração geral | Resetando configurações */

@@ -197,21 +197,71 @@
 
       <section class="carreira">
         <div class="container--padding">
-          <div class="carreira--experiencias--menu--texto">
-            <p class="p-title">
-              <span class="p-span">-</span>Plano de carreira
-            </p>
-            <h2 class="title">Meus <span>Cursos</span></h2>
-          </div>
-          <div class="carreira--experiencias--menu">
-            <nav class="menu">
+          <div class="container--flex">
+            <div class="carreira--box-left">
+              <p class="p-title">
+                <span class="p-span">-</span>Plano de carreira
+              </p>
+              <h2 class="title">Experiências de <span>trabalho</span></h2>
+              <div class="carreira--experiencias--tabs">
+                <button onclick="abrirTab('tab1')" class="ativo" type="submit">
+                  Empresa1 <i class="bx bx-chevron-right"></i>
+                </button>
+                <button onclick="abrirTab('tab2')" type="submit">
+                  Empresa2 <i class="bx bx-chevron-right"></i>
+                </button>
+                <button onclick="abrirTab('tab3')" type="submit">
+                  Empresa3 <i class="bx bx-chevron-right"></i>
+                </button>
+                <button onclick="abrirTab('tab4')" class="inativo" type="submit">
+                  Empresa4 <i class="bx bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div id="tab1" class="carreira--box-right tabs-conteudo">
+              <h3>Atuação <span>Empresa1</span></h3>
+              <p>Recife, Pernambuco</p>
               <ul>
-                <li><a href="#">Início</a>></li>
-                <li><a href="#Cursos">Cursos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">eBook</a></li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat molestiae, dolores aspernatur eos eius animi quasi
+                  quidem
+                </li>
               </ul>
-            </nav>
+            </div>
+            <div id="tab2" class="carreira--box-right tabs-conteudo">
+              <h3>Atuação <span>Empresa2</span></h3>
+              <p>Recife, Pernambuco</p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat molestiae, dolores aspernatur eos eius animi quasi
+                  quidem
+                </li>
+              </ul>
+            </div>
+            <div id="tab3" class="carreira--box-right tabs-conteudo">
+              <h3>Atuação <span>Empresa3</span></h3>
+              <p>Recife, Pernambuco</p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat molestiae, dolores aspernatur eos eius animi quasi
+                  quidem
+                </li>
+              </ul>
+            </div>
+            <div id="tab4" class="carreira--box-right tabs-conteudo">
+              <h3>Atuação <span>Empresa4</span></h3>
+              <p>Recife, Pernambuco</p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat molestiae, dolores aspernatur eos eius animi quasi
+                  quidem
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

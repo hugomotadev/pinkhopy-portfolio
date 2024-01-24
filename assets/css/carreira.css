@@ -1,0 +1,67 @@
+/* Estilização da section carreira */
+
+@import url("/assets/css/global.css");
+
+section.carreira {
+  background-color: aquamarine;
+  height: 57rem;
+}
+
+section.carreira .container--flex {
+  background-color: rgb(207, 206, 206);
+  height: 27rem;
+  column-gap: 7.8rem;
+}
+
+.carreira--box-left {
+  background-color: aqua;
+}
+
+.carreira--box-right {
+  background-color: beige;
+  width: 100%;
+  
+}
+
+/* Componente tabs menu */
+
+.carreira--box-left h2.title {
+  margin-bottom: 40px;
+}
+
+.carreira--experiencias--tabs {
+  display: flex;
+  flex-direction: column;
+  width: 198.593px;
+  justify-content: space-between;
+}
+
+.carreira--experiencias--tabs button {
+  padding: 12.414px 10.089px;
+  cursor: pointer;
+  justify-content: space-around;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.carreira--experiencias--tabs button.ativo {
+  background-color: var(--color-second);
+  color: #fff;
+}
+
+.carreira--experiencias--tabs button.inativo {
+  background-color: #ffffff57;
+}
+
+.carreira--experiencias--tabs button i {
+  font-size: 17px;
+}
+
+.tabs-conteudo {
+    display: none;
+    
+}

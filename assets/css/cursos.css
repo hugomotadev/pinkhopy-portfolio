@@ -9,16 +9,13 @@ section.cursos {
     rgba(255, 255, 255, 0.9836309523809523) 67%,
     rgba(255, 0, 249, 0.4458158263305322) 100%
   );
-  padding: 40px 9%;
-  margin-bottom: 40px; /* Espaçamento entre seções */
 }
 
 .container--padding,
-.container--padding h3,
+.container--padding h3.subtitle,
 .cursos-box--p-text {
   text-align: left;
   padding: 17px 0;
-  margin-bottom: 15px; /* Espaçamento interno em elementos */
 }
 
 .container--padding h2.title {
@@ -49,7 +46,7 @@ section.cursos {
 
 .cursos .container--padding .grid-container {
   display: grid;
-  gap: 70px;
+  gap: 30px 70px;
   grid-template-columns: auto auto;
 }
 
