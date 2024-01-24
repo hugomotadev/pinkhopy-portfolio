@@ -13,10 +13,10 @@
   --text-color: #3a3a3a;
   --color-primary: #d51482;
   --color-dark: #d51481a8;
-
+  --cinder-light: #656d72;
   --h1-font: 4.5rem;
   --h2-font: 2.9rem;
-  --p-font: 1re;
+  --p-font: 1rem;
 }
 /* Fim Variáveis */
 
@@ -41,6 +41,8 @@ body {
   display: flex;
 }
 
+/* Estilização de botão */
+
 .btn-contato button {
   padding: 12.0125px 40px;
   font-size: 18px;
@@ -59,6 +61,9 @@ body {
   transform: scale(1.05); /* efeito zoom/"crecimento" */
 }
 
+
+/* Estilização de texto */
+
 h2.title {
   color: var(--text-color);
   font-size: 38px;
@@ -70,6 +75,23 @@ h2 span {
   color: var(--color-primary);
   font-size: 38px;
   text-align: center;
+}
+
+
+.p-title {
+  text-transform: uppercase;
+  font-size: var(--p-font);
+  color: var(--cinder-light);
+  font-weight: 500;
+  line-height: 0.51894rem;
+  letter-spacing: 0.16219rem;
+}
+
+.p-span {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .cursos .container--padding .cursos-box {

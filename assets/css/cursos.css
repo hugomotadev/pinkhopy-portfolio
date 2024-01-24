@@ -1,6 +1,6 @@
 /* Estilização da section cursos */
 
-@import url('/assets/css/global.css');
+@import url("/assets/css/global.css");
 
 section.cursos {
   background: linear-gradient(
@@ -13,11 +13,32 @@ section.cursos {
   margin-bottom: 40px; /* Espaçamento entre seções */
 }
 
-.container--padding h2.title,
-.container--padding h3 {
+.container--padding,
+.container--padding h3,
+.cursos-box--p-text {
   text-align: left;
   padding: 17px 0;
   margin-bottom: 15px; /* Espaçamento interno em elementos */
+}
+
+.container--padding h2.title {
+  text-align: left;
+}
+
+.container--padding .p-title {
+  text-transform: uppercase;
+  font-size: var(--p-font);
+  color: var(--cinder-light);
+  font-weight: 500;
+  line-height: 0.51894rem;
+  letter-spacing: 0.16219rem;
+}
+
+.container--padding .p-title .p-span {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .cursos .container--padding .row-wrap {
