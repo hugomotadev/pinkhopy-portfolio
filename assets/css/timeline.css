@@ -1,0 +1,104 @@
+/* Estilização da section carreira */
+
+@import url("/assets/css/global.css");
+
+/* section.carreira, p, h2 {
+  text-align: left;
+  padding: 17px 0;
+} */
+
+.timeline {
+  position: relative;
+  padding: 40px 0;
+  width: 1000px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-primary);
+}
+
+.timeline ul li {
+  list-style: none;
+  line-height: normal;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 17px;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 29px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(233, 33, 99, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 29px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(233, 33, 99, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li h3 {
+  font-weight: 600;
+  color: rgba(233, 33, 99, 1);
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+}
+.timeline ul li .time h4 {
+  font-size: var(--h4-font);
+}
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  background-color: rgba(233, 33, 99, 1);
+  color: #fff;
+  right: -165px;
+  padding: 8px 16px;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    background-color: rgba(233, 33, 99, 1);
+    color: #fff;
+    left: -165px;
+    padding: 8px 16px;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}

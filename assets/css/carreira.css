@@ -1,6 +1,6 @@
 /* Estilização da section carreira */
 
-@import url("/assets/css/global.css");
+/* @import url("/assets/css/global.css");
 
 section.carreira {
   height: 57rem;
@@ -9,7 +9,7 @@ section.carreira {
 section.carreira .container--flex {
   column-gap: 7rem;
   height: 27rem;
-}
+} */
 
 .carreira--box-right {
   background-color: var(--color-second);
@@ -24,8 +24,8 @@ section.carreira .container--flex {
 }
 
 .carreira--box-right * {
-    margin-bottom: 5.4px;
-  }
+  margin-bottom: 5.4px;
+}
 
 .carreira--box-right h3 {
   font-size: var(--h3-font);
@@ -55,15 +55,6 @@ section.carreira .container--flex {
   border-radius: 6px;
   border: none;
   outline: none;
-}
-
-.carreira--experiencias--tabs button::before{
-    content: '';
-    background-color: aquamarine;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    border-radius: 50%;
 }
 
 .carreira--experiencias--tabs button.ativo {
