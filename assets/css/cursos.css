@@ -2,15 +2,6 @@
 
 @import url("/assets/css/global.css");
 
-section.cursos {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.9836309523809523) 67%,
-    rgba(255, 0, 249, 0.4458158263305322) 100%
-  );
-}
-
 .container--padding,
 .container--padding h3.subtitle,
 .cursos-box--p-text {
