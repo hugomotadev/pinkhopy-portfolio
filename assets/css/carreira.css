@@ -3,29 +3,38 @@
 @import url("/assets/css/global.css");
 
 section.carreira {
-  background-color: aquamarine;
   height: 57rem;
 }
 
 section.carreira .container--flex {
-  background-color: rgb(207, 206, 206);
+  column-gap: 7rem;
   height: 27rem;
-  column-gap: 7.8rem;
-}
-
-.carreira--box-left {
-  background-color: aqua;
 }
 
 .carreira--box-right {
-  background-color: beige;
+  background-color: var(--color-second);
   width: 100%;
-  
+  color: #fff;
+  padding: 17px;
+  border-radius: 10px;
+}
+
+.carreira--box-right ul {
+  padding: 17px;
+}
+
+.carreira--box-right * {
+    margin-bottom: 5.4px;
+  }
+
+.carreira--box-right h3 {
+  font-size: var(--h3-font);
+  font-weight: 500;
 }
 
 /* Componente tabs menu */
 
-.carreira--box-left h2.title {
+.carreira-title h2.title {
   margin-bottom: 40px;
 }
 
@@ -48,13 +57,18 @@ section.carreira .container--flex {
   outline: none;
 }
 
+.carreira--experiencias--tabs button::before{
+    content: '';
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+}
+
 .carreira--experiencias--tabs button.ativo {
   background-color: var(--color-second);
   color: #fff;
-}
-
-.carreira--experiencias--tabs button.inativo {
-  background-color: #ffffff57;
 }
 
 .carreira--experiencias--tabs button i {
@@ -62,6 +76,5 @@ section.carreira .container--flex {
 }
 
 .tabs-conteudo {
-    display: none;
-    
+  display: none;
 }

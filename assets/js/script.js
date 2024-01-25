@@ -1,17 +1,28 @@
 var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function(){
-    loader.style.display = "none"
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+});
 
-})
+// Clicando na tab-default - deixando texto ativo
+document.getElementById('tab-default').click();
 
-function abrirTab(idTab){
-    var conteudos = document.getElementsByClassName('tabs-conteudo')
-    
+
+// Função para midificar as classes das tab's na Section Experiências
+
+function abrirTab(event, idTab) {
+    var conteudos = document.getElementsByClassName("tabs-conteudo");
     for (var cont = 0; cont < conteudos.length; cont++) {
-        console.log(i);
-
+        conteudos[cont].style.display = "none";
     }
 
-    document.getElementById(idTab).style.display = 'block';
+    var tabs = document.getElementsByClassName("tab-button");
+    for (var cont = 0; cont < tabs.length; cont++) {
+        tabs[cont].className = tabs[cont].className.replace("ativo", "");
+    }
+
+    
+    document.getElementById(idTab).style.display = "block";
+    event.currentTarget.className += " ativo";
 }
+
