@@ -35,6 +35,7 @@
 body {
   font-family: var(--font-primary);
   background-color: var(--bg-color);
+  min-height: 100vh;
 }
 
 .container--padding {
@@ -45,6 +46,8 @@ body {
 
 .container--flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilização de botão */
